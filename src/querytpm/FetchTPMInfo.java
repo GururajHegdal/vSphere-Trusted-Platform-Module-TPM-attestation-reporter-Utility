@@ -134,6 +134,7 @@ public class FetchTPMInfo
 
             if (!(esx_username != null && esx_password != null)) {
                 System.err.println("Pls specify ESXi host credentials for logging into ESXi host");
+                val = false;
             }
 
         }
