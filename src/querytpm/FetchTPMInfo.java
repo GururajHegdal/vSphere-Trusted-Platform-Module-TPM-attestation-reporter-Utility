@@ -221,6 +221,7 @@ public class FetchTPMInfo
             System.out.println("_______________________________________________________________________________");
             System.out.println(" * * * * Query TPM events... * * * *");
             System.out.println("_______________________________________________________________________________");
+            System.out.println("TPM Log Reliable: " + tpmReport.isTpmLogReliable());
             HostTpmEventLogEntry[] tpmEvents = tpmReport.getTpmEvents();
             for (HostTpmEventLogEntry eveEntry : tpmEvents) {
                 System.out.println("---------------------------------");
